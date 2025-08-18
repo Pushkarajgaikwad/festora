@@ -1,0 +1,688 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      background: url('/assets/background\ image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      animation: fadeInBackground 2s ease-in-out;
+      
+    }
+   @keyframes goldenFadeGlow {
+  0% {
+    filter: drop-shadow(0 0 0px #FFD700);
+    opacity: 1;
+  }
+  30% {
+    filter: drop-shadow(0 0 30px #FFD700);
+    opacity: 1;
+  }
+  70% {
+    filter: drop-shadow(0 0 15px #FFD700);
+    opacity: 0.8;
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #FFD700);
+    opacity: 1;
+  }
+}
+
+.logo-container img,
+.festora-logo-img {
+  animation: goldenFadeGlow 3s ease-in-out 0s 1;
+}
+    .logo-top {
+      background: transparent;
+      padding: 20px 0 10px;
+      animation: fadeZoom 1.2s ease-out;
+      display: flex;
+      justify-content: center;
+      text-shadow: 2px 2px 4px #000; /* Black shadow */
+    }
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo-container img:first-child {
+      max-width: 120px;
+    }
+    .logo-container img:last-child {
+      max-width: 150px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: transparent;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+      position: relative;
+      transition: color 0.3s;
+      text-shadow: 2px 2px 4px #000; /* Black shadow */
+    }
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      left: 50%;
+      background: #ff9800;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    nav ul li a:hover::after {
+      width: 80%;
+    }
+    nav ul li a:hover {
+      color: #555;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #333;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: silver bright ;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background: #ff9800;
+      color: #000;
+    }
+    nav ul li:hover .dropdown-content {
+      display: block;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1549921296-3a6b1ac96ad5') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+    /* Updated heading and paragraph styles */
+    .hero h1 {
+      font-size: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      color: #FFD700; /* simple golden color */
+      background: transparent;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      text-align: center;
+      text-shadow: 2px 2px 4px #000; /* Black shadow */
+      animation: slideDownFade 3s ease-out forwards;
+    }
+    .hero p {
+      font-size: 22px;
+      font-family: 'Baskerville Old Face', serif;
+      color: #222;
+      background: transparent;
+      padding: 15px 25px;
+      border-radius: 8px;
+      max-width: 750px;
+      text-align: center;
+      line-height: 1.5;
+      margin: 0;
+      animation: fadeUp 1.5s ease-out forwards;
+      animation-delay: 0.5s;
+      opacity: 0;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    section:nth-child(even) {
+      background: transparent;
+    }
+    /* About Us heading and paragraph styles */
+    #about h2 {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 32px;
+      color: black;
+      background: transparent;
+      margin-bottom: 20px;
+    }
+    #about p {
+      font-family: 'Baskerville Old Face', serif;
+      font-size: 18px;
+      color: #222;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    footer {
+      background: transparent;
+      color: black; /* changed to black */
+      text-align: center;
+      padding: 20px;
+    }
+    footer p {
+      color: black;
+      font-size: 16px;
+      text-align: center;
+      margin: 0;
+      line-height: 1.4;
+    }
+    footer .second-line {
+      display: block;
+      margin-top: 6px;
+      font-weight: normal;
+    }
+    footer .heart {
+      color: red;
+      font-weight: bold;
+    }
+    footer .P {
+      color: rgb(249, 167, 3);
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000; /* Black shadow */
+    }
+    footer .and {
+      color: silver bright;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000; /* Black shadow */
+    }
+    footer .N {
+      color: rgb(249, 167, 3);
+      font-weight: bold;
+      text-shadow: 2px 2px 4px #000; /* Black shadow */
+    }
+    .footer-icons {
+      margin-top: 10px;
+    }
+    .footer-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      transition: transform 0.3s;
+    }
+    .footer-icons a:hover {
+      transform: scale(1.2);
+    }
+    .footer-icons img {
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+    }
+    .service-card {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      padding-bottom: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 15px rgba(0,0,0,0.2);
+    }
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .service-card h3 {
+      color: #FFD700; /* Golden */
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 2px 2px 4px #000; /* Black shadow */
+    }
+
+    .service-card p {
+      color: #C0C0C0; /* Silver */
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 18px;
+      text-align: center;
+      text-shadow: 2px 2px 4px #000; /* Black shadow */
+    }
+    .btn,
+    .download-btn {
+      background: goldenrod;
+      color: whitesmoke;
+      border: black 2px solid;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+      text-shadow: 2px 2px 4px #000; /* Black shadow */
+      text-decoration: none;
+    }
+
+    .btn:hover,
+    .download-btn:hover {
+      background: goldenrod;
+      color: white;
+      border: rgb(180, 131, 7);
+    }
+    @media(max-width:768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero p {
+        font-size: 18px;
+        max-width: 90%;
+      }
+      nav ul {
+        gap: 30px;
+        justify-content: center;
+      }
+      #about h2 {
+        font-size: 24px;
+      }
+      #about p {
+        font-size: 16px;
+        max-width: 90%;
+      }
+    }
+    #services, #contact {
+      background-color: transparent !important;
+    }
+    .festora-logo {
+    font-family: 'Times New Roman', serif; /* Elegant serif font */
+    font-weight: bold;
+    font-size: 40px; /* Adjust size as needed */
+    background: linear-gradient(180deg, #FFD700 0%, #FFB700 40%, #E6A800 70%, #B8860B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 5px;
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.6), /* Dark drop shadow */
+        0px 0px 10px rgba(255, 215, 0, 0.6); /* Golden glow */
+}
+
+.festora-subtext {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 40px;
+    background: linear-gradient(180deg, #FFD700 0%, #FFB700 40%, #E6A800 70%, #B8860B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 15px;
+    text-shadow:
+        1px 1px 3px rgba(0, 0, 0, 0.5),
+        0px 0px 6px rgba(255, 215, 0, 0.5);
+}
+.hero h1,
+section h2,
+#about h2,
+#contact h2 {
+  color: #FFD700;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 40px; /* matches Welcome to FestoraEvents */
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #000; /* Black shadow */
+}
+.hero p,
+#about p,
+#contact p,
+footer p {
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000; /* Black shadow */
+}
+
+/* Glow for logo.png */
+.logo-container img.logo-img {
+  filter: drop-shadow(0 0 0px #FFD700);
+  animation: logoGlowFade 3s ease-in-out forwards;
+}
+
+@keyframes logoGlowFade {
+  0%   { filter: drop-shadow(0 0 0px #FFD700); }
+  30%  { filter: drop-shadow(0 0 30px #FFD700); }
+  70%  { filter: drop-shadow(0 0 15px #FFD700); }
+  100% { filter: drop-shadow(0 0 0px #FFD700); }
+}
+
+/* Left-to-right sweep for text.png */
+.logo-container img.text-img {
+  filter: drop-shadow(0 0 0px #FFD700);
+  mask-image: linear-gradient(90deg, #fff 0%, transparent 100%);
+  animation: textGlowSweep 3s linear forwards;
+}
+
+@keyframes textGlowSweep {
+  0% {
+    filter: drop-shadow(0 0 0px #FFD700);
+    mask-image: linear-gradient(90deg, #fff 0%, transparent 100%);
+  }
+  100% {
+    filter: drop-shadow(0 0 30px #FFD700);
+    mask-image: linear-gradient(90deg, #fff 100%, transparent 100%);
+  }
+}
+
+
+@keyframes circular-glow {
+  0%   { filter: url(#glow); }
+  50%  { filter: url(#glow); }
+  100% { filter: url(#glow); }
+}
+
+/* Fade out after 4s */
+@keyframes circular-glow-fade {
+  0%   { filter: url(#glow); opacity: 1; }
+  80%  { filter: url(#glow); opacity: 1; }
+  100% { filter: url(#glow); opacity: 0; }
+}
+
+svg #logo-main {
+  filter: url(#glow);
+  animation: circular-glow-fade 4s forwards;
+}
+
+@keyframes left-to-right-glow {
+  0%   { transform: translateX(-100px); opacity: 0.8; }
+  50%  { transform: translateX(300px); opacity: 0.8; }
+  100% { transform: translateX(400px); opacity: 0; }
+}
+
+@keyframes left-to-right-glow-fade {
+  0%   { transform: translateX(-100px); opacity: 0.8; }
+  80%  { transform: translateX(300px); opacity: 0.8; }
+  100% { transform: translateX(400px); opacity: 0; }
+}
+
+svg #glow-rect {
+  animation: left-to-right-glow-fade 4s forwards;
+}
+
+@keyframes phone-ring-zoom {
+  0%   { transform: scale(1) rotate(0deg); }
+  5%   { transform: scale(1.2) rotate(-15deg); }
+  10%  { transform: scale(1.2) rotate(15deg); }
+  15%  { transform: scale(1.2) rotate(-15deg); }
+  20%  { transform: scale(1.2) rotate(15deg); }
+  25%  { transform: scale(1.2) rotate(-15deg); }
+  30%  { transform: scale(1.2) rotate(15deg); }
+  35%  { transform: scale(1.2) rotate(-15deg); }
+  40%  { transform: scale(1.2) rotate(15deg); }
+  45%  { transform: scale(1.2) rotate(-15deg); }
+  50%  { transform: scale(1.2) rotate(0deg); }
+  100% { transform: scale(1) rotate(0deg); } /* Pause state */
+}
+
+.phone-ring-icon {
+  display: inline-block;
+  animation: phone-ring-zoom 4s linear infinite;
+  transform-origin: 50% 80%; /* Pivot near the bottom for realistic ringing */
+}
+.animated-number {
+  color: #f9c802;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  animation: bounce 1s ease-in-out infinite, glow 2s ease-in-out infinite alternate, floaty 2s ease-in-out infinite;
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes slideDownFade {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes cardFadeUp {
+  0% { transform: translateY(30px) scale(0.95); opacity: 0; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+.footer-icons a:hover img {
+  animation: pulseGlow 0.8s ease-in-out;
+}
+@keyframes pulseGlow {
+  0% { transform: scale(1); filter: drop-shadow(0 0 0px #FFD700); }
+  50% { transform: scale(1.15); filter: drop-shadow(0 0 10px #FFD700); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 0px #FFD700); }
+}
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: goldenrod;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+.scroll-top:hover {
+  transform: scale(1.2);
+}
+#goldParticles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+/* --- GOLDEN GLOW FOR SERVICE CARDS --- */
+
+/* Let the glow render outside the card edges */
+.service-card {
+  position: relative;
+  overflow: visible; /* overrides the earlier overflow: hidden */
+}
+
+/* Invisible glow layer around the card */
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: -8px;                 /* a little outside the card */
+  border-radius: 12px;         /* matches your 8px radius, but slightly larger */
+  pointer-events: none;        /* don't block clicks */
+  opacity: 0;                  /* hidden until hover */
+  box-shadow: 0 0 0 rgba(255, 215, 0, 0);
+}
+
+/* On hover, pulse a golden glow (independent of inline animations) */
+.service-card:hover::after {
+  opacity: 1;
+  animation: cardGlowShadow 2.5s ease-in-out forwards;
+}
+
+/* Pulse keyframes (golden) */
+@keyframes cardGlowShadow {
+  0% {
+    box-shadow: 0 0 0 rgba(255, 215, 0, 0);
+  }
+  50% {
+    box-shadow:
+      0 0 12px rgba(255, 215, 0, 0.9),
+      0 0 24px rgba(255, 215, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 215, 0, 0);
+  }
+}
+/* --- Menu Bar Styling and Golden Glow --- */
+nav ul li a {
+  color: #f5f5f5; /* bright silver-white */
+  font-family: 'Times New Roman', Times, serif; /* elegant serif for luxury theme */
+  font-weight: bold;
+  font-size: 20px; /* slightly larger for balance */
+  text-shadow: 2px 2px 4px #000; /* black shadow for contrast */
+  transition: color 0.3s ease;
+}
+
+/* Golden glow on hover (same as WhatsApp icon) */
+nav ul li a:hover {
+  color: #f5f5f5; /* keep silver text */
+  animation: pulseGlow 0.8s ease-in-out; /* reuses existing golden glow animation */
+}
+
+/* Ensure dropdown items also get the new font/color */
+.dropdown-content a {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #f5f5f5; /* silver-white */
+  text-shadow: 1px 1px 3px #000;
+}
+
+.dropdown-content a:hover {
+  background: #ff9800;
+  color: #000;
+}
+/* Apply glow on mobile when tapped (active) or focused */
+
+/* Menu links */
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+  animation: pulseGlow 0.8s ease-in-out;
+  color: #f5f5f5;
+}
+
+/* Service cards */
+.service-card:hover,
+.service-card:focus,
+.service-card:active {
+  animation: pulseGlow 0.8s ease-in-out;
+}
+
+/* Footer icons */
+.footer-icons a:hover img,
+.footer-icons a:focus img,
+.footer-icons a:active img {
+  animation: pulseGlow 0.8s ease-in-out;
+}
+
+/* Logo images */
+.logo-container img:hover,
+.logo-container img:focus,
+.logo-container img:active {
+  animation: pulseGlow 0.8s ease-in-out;
+}
+
+/* Buttons (Explore Design, Download Collections) */
+.btn:hover,
+.btn:focus,
+.btn:active,
+.download-btn:hover,
+.download-btn:focus,
+.download-btn:active {
+  animation: pulseGlow 0.8s ease-in-out;
+}
+/* Reuse existing golden glow animation */
+@keyframes pulseGlow {
+  0%   { transform: scale(1); filter: drop-shadow(0 0 0px #FFD700); }
+  50%  { transform: scale(1.15); filter: drop-shadow(0 0 10px #FFD700); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 0px #FFD700); }
+}
+
+/* Menu bar links glow on hover, focus, active */
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active,
+nav ul li a.glow {
+  animation: pulseGlow 0.8s ease-in-out;
+  color: #f5f5f5; /* silver-white */
+}
+
+/* Footer icons glow on hover, focus, active */
+.footer-icons a:hover img,
+.footer-icons a:focus img,
+.footer-icons a:active img,
+.footer-icons a.glow img {
+  animation: pulseGlow 0.8s ease-in-out;
+}
+
+/* Service cards glow */
+.service-card:hover,
+.service-card:focus,
+.service-card:active,
+.service-card.glow {
+  animation: pulseGlow 0.8s ease-in-out;
+}
+
+/* Buttons glow */
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.glow,
+.download-btn:hover,
+.download-btn:focus,
+.download-btn:active,
+.download-btn.glow {
+  animation: pulseGlow 0.8s ease-in-out;
+}
+/* Glow animations */
+@keyframes goldenGlow {
+  0%, 100% { filter: drop-shadow(0 0 0px gold); }
+  50% { filter: drop-shadow(0 0 12px gold); }
+}
+
+@keyframes silverGlow {
+  0%, 100% { filter: drop-shadow(0 0 0px silver); }
+  50% { filter: drop-shadow(0 0 12px silver); }
+}
+
+@keyframes redGlow {
+  0%, 100% { filter: drop-shadow(0 0 0px red); }
+  50% { filter: drop-shadow(0 0 12px red); }
+}
+
+/* Apply to footer text */
+footer .P,
+footer .N {
+  animation: goldenGlow 4s ease-in-out infinite;
+}
+
+footer .and {
+  animation: silverGlow 4s ease-in-out infinite;
+}
+
+footer .heart {
+  animation: redGlow 4s ease-in-out infinite;
+}
+

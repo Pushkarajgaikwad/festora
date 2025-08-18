@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FestoraEvents</title>
+  <link rel="stylesheet" href="./style.css" />
+  
+</head>
+<body>
+  <canvas id="goldParticles"></canvas>
+  <div class="logo-top">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Logo" class="logo-img">
+      <img src="assets/text.png" alt="Festora Text" class="text-img">
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li>
+        <a href="#services">Services ▾</a>
+        <div class="dropdown-content">
+          <a href="#anniversary">Wedding Anniversary</a>
+          <a href="#nameceremony">Name Ceremony</a>
+          <a href="#babyshower">Baby Shower</a>
+          <a href="#birthday">Birthday Parties</a>
+        </div>
+      </li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="home" class="hero">
+    <h1>Welcome to Festora Events</h1>
+    <p>
+      Where every detail whispers elegance, every corner radiates joy, and every moment becomes a timeless memory. From intimate gatherings to grand celebrations, we turn your vision into reality with a touch of magic and style.
+    </p>
+  </div>
+  <section id="services">
+    <h2>Our Services</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+      <div id="anniversary" class="service-card">
+        <img src="/assets/fs wedding anniversary img.webp" alt="Wedding Anniversary">
+        <h3>Wedding Anniversary</h3>
+        <p>Celebrate love with beautiful anniversary decor tailored to your style.</p>
+        <a href="/assets/Wedding Anniversary.pdf" target="_blank" class="btn">Explore Design</a>
+        <button class="btn download-btn" data-file="/assets/Wedding Anniversary.pdf">Download Collections</button>
+      </div>
+      <div id="nameceremony" class="service-card">
+        <img src="/assets/fs name ceremony img.jpg" alt="Name Ceremony">
+        <h3>Name Ceremony</h3>
+        <p>Memorable name ceremony setups for your little one’s special day.</p>
+        <a href="/assets/Naming ceremony.pdf" target="_blank" class="btn">Explore Design</a>
+        <button class="btn download-btn" data-file="/assets/Naming ceremony.pdf">Download Collections</button>
+      </div>
+      <div id="babyshower" class="service-card">
+        <img src="/assets/fs baby shower image.jpeg" alt="Baby Shower">
+        <h3>Baby Shower</h3>
+        <p>Joyful and cute baby shower decorations for expecting parents.</p>
+        <a href="/assets/Baby Shower And Welcome Baby.pdf" target="_blank" class="btn">Explore Design</a>
+        <button class="btn download-btn" data-file="/assets/Baby Shower And Welcome Baby.pdf">Download Collections</button>
+      </div>
+      <div id="birthday" class="service-card">
+        <img src="/assets/Fs birthday party img.jpeg" alt="Birthday Parties">
+        <h3>Birthday Parties</h3>
+        <p>Fun, colorful, and unique birthday party themes for all ages.</p>
+        <a href="/assets/Birthday Party.pdf" target="_blank" class="btn">Explore Design</a>
+        <button class="btn download-btn" data-file="/assets/Birthday Party.pdf">Download Collections</button>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At FestoraEvents, we bring your dreams to life by crafting unforgettable experiences with passion and creativity. Our dedicated team ensures every detail reflects your unique style, making every celebration truly magical and memorable.
+    </p>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Connect with us on WhatsApp, call us directly on 
+  <a href="tel:7620877844" class="animated-number">7620877844</a>, 
+  or follow us on Instagram.
+    </p>
+  </section>
+  <footer>
+    <p>
+      Copyright © 2025 All Rights Reserved by Festora Event |<br>
+      <span class="second-line">Made in <span class="heart">♥</span> with <span class="P">P</span><span class="and">&</span><span class="N">N</span></span>
+    </p>
+    <div class="footer-icons">
+      <a href="https://wa.me/917620877844" target="_blank" title="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Icon">
+      </a>
+      <a href="https://www.instagram.com/festoraa_events?igsh=MTZzZXpxdmFtYjF4Zg==" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram Icon">
+      </a>
+      <a href="tel:7620877844" title="Call Us">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="c" class="phone-ring-icon">
+      </a>
+    </div>
+  </footer>
+  <script src="./javascript.js"></script>
+</body>
+</html>
