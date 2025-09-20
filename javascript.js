@@ -38,19 +38,7 @@ cards.forEach(card => {
   card.style.opacity = '0';
   observer.observe(card);
 });
-// Scroll to Top Floating Button
-const topBtn = document.createElement('div');
-topBtn.innerHTML = '↑';
-topBtn.classList.add('scroll-top');
-document.body.appendChild(topBtn);
 
-window.addEventListener('scroll', () => {
-  topBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
-});
-
-topBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
 //Background image moves slightly as the user scrolls.
 // In javascript.js
 window.addEventListener('scroll', () => {
